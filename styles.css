@@ -1,0 +1,87 @@
+:root{
+--Green500: hsl(158, 36%, 37%);
+--Green700: hsl(158, 42%, 18%);
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Cream);
+    font-family: 'Montserrat', sans-serif;
+}
+.product-name{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bolder;
+}
+.perfume{
+    font-size: 0.77rem;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+    text-transform: uppercase;
+    letter-spacing: .27rem;
+    color: var(--Grey);
+}
+.product-description{
+    color: var(--Grey);
+    margin-top: 0;
+    font-size: .9rem;
+}
+.button-wrap{
+    display: flex;
+    background-color: var(--Green500);
+    cursor: pointer;    
+    border-radius: .2rem;
+    padding: 0.75rem 0;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75px;
+    width: 100%;
+}
+.button{
+    width: 100%;
+    border: none;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+.button-icon{
+    width: 1rem;
+    height: 1rem;
+}
+.container{
+    display: grid;
+    place-content: center;
+    
+}
+.product-card{
+    width: 33.3rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+    align-content: start;
+    background-color: var(--White);
+    border-radius: .55rem;
+    overflow: hidden;
+}
+.product-image{
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 100%;
+    
+}
+.text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.8rem;
+}
